@@ -1,0 +1,59 @@
+body {
+.header {
+    display:flex;
+    align-items: center;
+    height: 70px;
+    weight:50px;
+    gap:8px;
+}
+.container {
+    display :flex;
+    gap:30px;
+    text-align:justify;
+    align-items: flex-start;
+}
+
+.listing {
+width: 1000px;
+height:200px;
+overflow:hidden;
+overflow:auto;
+scrollbar-width: none;
+}
+
+ul.a {
+    list-style-type: circle;
+}
+
+a {
+    color:dodgerblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color:black;
+    text-decoration: underline;
+
+}
+details > summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding-left:15px;
+    align-items: center;
+}
+
+details > summary:before {
+    content:'+';
+    position: absolute;
+    left:0;
+    color: dodgerblue;
+    align-items: center;
+    height:100%;
+}
+
+details[open] > summary:before {
+    content:'-';
+}
+
+}
